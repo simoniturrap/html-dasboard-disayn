@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Theme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/716026626a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+  <!-- <div class="notification">
+    <p>Mensaje de Notificación</p>
+  </div> -->
+
+  <header>
+    <div class="row g-0">
+      <div class="col-6">
+        <!-- Search -->
+      </div>
+      <div class="col-6">
+        <div class="user-info">
+          <div id="menu">
+            <a href="#">Mi Perfil<i class="far fa-user"></i></a>
+            <a href="#" id="boton">Cambiar tema<i class="fas fa-adjust"></i></a>
+            <a href="#">Cerrar Sesión<i class="fas fa-sign-out-alt"></i></a>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <img src="images/avatar.png" class="avatar">
+          <p>Daniela Pardo</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside>
+    <div class="logo">
+      <img src="images/logo-disayn.png">
+    </div>
+    <a href="#" class="active"><i class="fas fa-columns fa-lg"></i>Home</a>
+    <a href="#"><i class="far fa-folder fa-lg"></i>Portafolio</a>
+    <a href="#"><i class="far fa-file fa-lg"></i>Cotizaciones</a>
+    <a href="#"><i class="fas fa-mug-hot fa-lg"></i>Clientes</a>
+  </aside>
+  
+  <div id="content">
+    <div class="container">
+      <div class="row title">
+        <h1>Dashboard</h1>
+        <p>Resumen</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="panel resumen">
+            <div class="color clientes"><i class="far fa-user fa-2x"></i></div>
+            <p>24</p>
+            <span>Clientes Felices</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="panel resumen">
+            <div class="color proyectos"><i class="far fa-folder fa-2x"></i></div>
+            <p>24</p>
+            <span>Proyectos en Portafolio</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="panel resumen">
+            <div class="color aprobadas"><i class="far fa-file fa-2x"></i></div>
+            <p>24</p>
+            <span>Cotizaciones Aprobadas</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="panel resumen">
+            <div class="color rechazadas"><i class="far fa-file fa-2x"></i></div>
+            <p>24</p>
+            <span>Cotizaciones Rechazadas</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="panel mt-4">
+            <div class="panel-header row g-0">
+              <div class="col-6">
+                <p>Cotizaciones</p>
+              </div>
+              <div class="col-6">
+                <a href="#" class="btn btn-primary float-end"><i class="fas fa-plus"></i>Nueva Cotización</a>
+              </div>
+            </div>
+            <div class="panel-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nº de Cot.</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                    <th>Cotizador</th>
+                    <th>PDF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">1</a></td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td><img src="images/avatar-user.png"></td>
+                    <td><i class="far fa-file-pdf"></i></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">2</a></td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td><img src="images/avatar-user.png"></td>
+                    <td><i class="far fa-file-pdf"></i></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">3</a></td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td><img src="images/avatar-user.png"></td>
+                    <td><i class="far fa-file-pdf"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="panel mt-4">
+            <div class="panel-header row g-0">
+              <div class="col-6">
+                <p>Nueva Cotización</p>
+              </div>
+              <div class="col-6"> 
+                <a href="#" class="btn btn-primary float-end"><i class="fas fa-chevron-left"></i>Atrás</a>
+              </div>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <label class="form-label">Cliente:</label>
+                <input type="text" class="form-control mb-3" placeholder="Cliente">
+                <label class="form-label">Fecha de Emisión:</label>
+                <input type="date" placeholder="Cliente" class="form-control mb-3">
+                <label class="form-label">Válido Hasta:</label>
+                <input type="date" placeholder="Cliente" class="form-control">
+                <button type="submit" class="btn btn-info">Crear Cotización</button>
+                <a href="#" class="btn btn-default">Cancelar</a>
+              </form>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="panel mt-4">
+            <div class="panel-header">
+              <p>Servicios</p>
+            </div>
+            <div class="panel-body">
+              <p class="text-warning mb-4">No existen servicios en esta cotización.</p>
+              <form action="">
+                <label class="form-label">Servicio:</label>
+                <input type="text" class="form-control" placeholder="Servicio">
+                <label class="form-label">Descripción:</label>
+                <textarea name="" rows="4" class="form-control" placeholder="Descripción"></textarea>
+                <label class="form-label">Precio:</label>
+                <input type="text" class="form-control" placeholder="Precio">
+                <button type="submit" class="btn btn-info">Agregar Servicio</button>
+              </form>
+            </div>
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="panel mt-4">
+            <div class="panel-header">
+              <p>Condiciones</p>
+            </div>
+            <div class="panel-body">
+              <ol>
+                <li>Info de cliente entregada a diseñador para confección y diseño de propuestas o piezas gráficas.</li>
+                <li>3 correciones dentro de la cotización.</li>
+              </ol>
+            </div>
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
